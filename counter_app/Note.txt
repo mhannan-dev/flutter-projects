@@ -6,9 +6,10 @@ Here's a step-by-step roadmap to learning Flutter for mobile app development:
 - Learn the syntax: variables, data types, functions.
 - Understand control flow: if-else, switch, loops (for, while).
 - Grasp the concept of collections: Lists, Sets, Maps.
+
  1. Counter App
  2. To-Do List App
- 3. Expense Tracker
+ 3. Calculator App
 
 
 #### Advanced Topics
