@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../core/widgets/primary_button.dart'; 
+import '../../core/widgets/primary_button.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -29,11 +29,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   }
 
   void _navigateToHome() {
-    Navigator.pop(context); // Navigate back to the previous screen (home screen)
+    Navigator.pop(context);
   }
 
   void _login() {
-    // Handle login logic here
     print('Navigate to login screen');
   }
 
@@ -92,14 +91,27 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Registration'),
+        title: const Text(
+          'Registration',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 17, 100, 249),
-        elevation: 0, // Flat app bar (no shadow)
+        elevation: 0,
+        iconTheme: const IconThemeData( // Change back arrow color to white
+          color: Colors.white,
+        ),
         actions: <Widget>[
           IconButton(
-            icon: const Icon(Icons.login),
-            onPressed: _login, // Navigate to login screen
+            icon: const Icon(
+              Icons.login,
+              color: Colors.white,
+            ),
+            onPressed: _login,
           ),
         ],
       ),
@@ -168,7 +180,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   buttonText: 'Submit',
                   onPressed: _register,
                 ),
-                
               ],
             ),
           ),

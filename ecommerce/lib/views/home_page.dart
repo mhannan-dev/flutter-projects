@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'forgot_password.dart';
 import 'registration_screen.dart';
-import '../core/widgets/primary_button.dart'; 
+import '../../core/widgets/primary_button.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
