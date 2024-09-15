@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'forgot_password.dart';
 import 'registration_screen.dart';
-import 'primary_button.dart';
+import '../core/widgets/primary_button.dart'; 
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                   const SizedBox(height: 24.0),
-                  PrimatyButton(
+                  PrimaryButton(
                     buttonText: 'Sign in to account',
                     onPressed: _login,
                   ),
